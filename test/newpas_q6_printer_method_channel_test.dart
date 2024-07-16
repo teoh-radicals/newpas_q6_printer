@@ -1,11 +1,9 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:newpas_q6_printer/newpas_q6_printer_method_channel.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  MethodChannelNewpasQ6Printer platform = MethodChannelNewpasQ6Printer();
   const MethodChannel channel = MethodChannel('newpas_q6_printer');
 
   setUp(() {

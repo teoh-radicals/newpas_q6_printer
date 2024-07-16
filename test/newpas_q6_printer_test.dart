@@ -32,7 +32,7 @@ class MockNewpasQ6PrinterPlatform
   Future<void> setAlignment(PrintAlign alignment) => Future.value(null);
 
   @override
-  Future<void> setFontSize(FontSize fontSize) => Future.value(null);
+  Future<void> setFontSize(FontSize size) => Future.value(null);
 
   @override
   Future<void> printRow({required List<ColumnMaker> cols, bool end = false}) =>

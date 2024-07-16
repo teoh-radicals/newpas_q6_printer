@@ -1,12 +1,8 @@
-import 'dart:typed_data';
-import 'dart:ui';
-
 import 'package:newpas_q6_printer/column_maker.dart';
 import 'package:newpas_q6_printer/enums.dart';
 
 import 'newpas_q6_printer_platform_interface.dart';
 import 'package:newpas_q6_printer/text_style.dart';
-import 'package:newpas_q6_printer/enums.dart';
 
 class NewpasQ6Printer {
   Future<bool?> bindPrinter() {

@@ -5,8 +5,6 @@ import 'package:newpas_q6_printer/enums.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'newpas_q6_printer_method_channel.dart';
-import 'package:newpas_q6_printer/text_style.dart';
-import 'package:newpas_q6_printer/enums.dart';
 
 abstract class NewpasQ6PrinterPlatform extends PlatformInterface {
   /// Constructs a NewpasQ6PrinterPlatform.
@@ -53,7 +51,7 @@ abstract class NewpasQ6PrinterPlatform extends PlatformInterface {
     throw UnimplementedError('setAlignment() has not been implemented.');
   }
 
-  Future<void> setFontSize(FontSize fontSize) {
+  Future<void> setFontSize(FontSize size) {
     throw UnimplementedError('setFontSize() has not been implemented.');
   }
 
