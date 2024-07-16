@@ -1,7 +1,7 @@
 name: newpas_q6_printer
-description: plugin for newpas q6 thermal printer
-version: 0.0.1
-homepage:
+description: plugin for newpas q6 handheld thermal printer
+version: 1.0.0
+homepage: https://github.com/teoh-radicals/newpas_q6_printer
 
 environment:
   sdk: '>=3.1.3 <4.0.0'
