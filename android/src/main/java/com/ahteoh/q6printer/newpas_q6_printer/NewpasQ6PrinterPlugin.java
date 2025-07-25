@@ -50,6 +50,9 @@ public class NewpasQ6PrinterPlugin implements FlutterPlugin, MethodCallHandler {
                 q6PrinterMethod.initPrinter();
                 result.success(true);
                 break;
+            case "IS_PRINTER_READY":
+                result.success(q6PrinterMethod != null && q6PrinterMethod.isReady());
+                break;
             case "PRINT_TEXT":
                 String text = call.argument("text");
                 q6PrinterMethod.printText(text);

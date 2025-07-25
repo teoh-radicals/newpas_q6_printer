@@ -41,11 +41,13 @@ public class Q6PrinterMethod {
     final ServiceConnection connectService = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
+            Log.d(TAG, "Printer service connected");
             mIPosPrinterService = IPosPrinterService.Stub.asInterface(service);
         }
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
+            Log.d(TAG, "Printer service disconnected");
             mIPosPrinterService = null;
         }
     };
@@ -68,6 +70,10 @@ public class Q6PrinterMethod {
         } catch (RemoteException e) {
         } catch (NullPointerException e) {
         }
+    }
+
+    public boolean isReady() {
+        return mIPosPrinterService != null;
     }
 
     public Boolean printText(String text) {
