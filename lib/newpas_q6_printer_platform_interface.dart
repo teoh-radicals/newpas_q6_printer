@@ -39,6 +39,10 @@ abstract class NewpasQ6PrinterPlatform extends PlatformInterface {
     throw UnimplementedError('initPrinter() has not been implemented.');
   }
 
+  Future<bool?> isReady() {
+    throw UnimplementedError('isReady() has not been implemented.');
+  }
+
   Future<void> printText(String text) {
     throw UnimplementedError('printText() has not been implemented.');
   }

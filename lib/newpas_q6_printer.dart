@@ -17,6 +17,10 @@ class NewpasQ6Printer {
     return NewpasQ6PrinterPlatform.instance.initPrinter();
   }
 
+  Future<bool?> isReady() {
+    return NewpasQ6PrinterPlatform.instance.isReady();
+  }
+
   Future<void> printText(String text, {PrinterTextStyle? style}) async {
     if (style != null) {
       if (style.align != null) {

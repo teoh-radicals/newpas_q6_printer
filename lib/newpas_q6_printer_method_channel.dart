@@ -34,6 +34,12 @@ class MethodChannelNewpasQ6Printer extends NewpasQ6PrinterPlatform {
   }
 
   @override
+  Future<bool?> isReady() async {
+    final bool? status = await methodChannel.invokeMethod('IS_PRINTER_READY');
+    return status;
+  }
+
+  @override
   Future<void> printText(String text) async {
     Map<String, dynamic> arguments = <String, dynamic>{"text": '$text\n'};
     await methodChannel.invokeMethod("PRINT_TEXT", arguments);
